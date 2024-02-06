@@ -1,0 +1,11 @@
+<div class="photos-container">
+    <h1>Photo Gallery</h1>
+    <div class="photo-grid">
+        <div class="photo-item" *ngFor="let photo of service.photos">
+            <a [routerLink]="['/details', photo.id]">
+                <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}">
+                <div class="photo-title">{{ photo.title }}</div>
+            </a>
+        </div>
+    </div>
+</div>

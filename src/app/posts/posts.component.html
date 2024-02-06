@@ -1,0 +1,17 @@
+<div class="add-post-container">
+  <h2>Add a New Post</h2>
+  <form (ngSubmit)="service.postPost()" class="add-post-form">
+    <input type="text" [(ngModel)]="service.newPost.title" name="newTitle" placeholder="Title" class="form-input">
+    <textarea [(ngModel)]="service.newPost.body" name="newBody" placeholder="Body" class="form-textarea"></textarea>
+    <button type="submit" class="submit-button">Add Post</button>
+  </form>
+</div>
+
+<h1>Latest Posts</h1>
+<div class="posts-container">
+  
+  <div class="post" *ngFor="let post of service.posts">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-body">{{ post.body }}</p>
+  </div>
+</div>

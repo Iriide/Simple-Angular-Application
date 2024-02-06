@@ -1,0 +1,86 @@
+/* Posts Container */
+.posts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Individual Post */
+.post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    margin-top: 0;
+    color: blue;
+    text-shadow: red 1px 1px 0;
+}
+
+.post-body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .posts-container {
+        padding: 10px;
+    }
+}
+/* Add Post Container */
+.add-post-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input, .form-textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.form-textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.submit-button:hover {
+    background-color: red;
+}
